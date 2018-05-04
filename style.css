@@ -1,0 +1,246 @@
+html, body{
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: rgba(232,48,84, 0.8);
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px 20px 0px;
+    position: fixed;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.cleversteamlogo {
+  border-style: none;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Scrolling Rubies */
+.backgrnd-rubies {
+  background: gray url(img/rubiesv2.png) repeat 0 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-animation: scroll 1400s linear infinite;
+  z-index: -1;
+}
+
+.backgrnd-rubies img {
+  position: relative;
+  top: 170px;
+  border-style: none;
+}
+
+@-webkit-keyframes scroll {
+    from { background-position: 0 0; }
+    to { background-position: -40000px 0; }
+}
+
+.section-wrap {
+    position: relative;
+    top: 350px;
+}
+
+h1{
+  width: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.content{
+  padding: 30px;
+}
+
+
+section{
+    display: flex;
+    background-color: #55555a;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.content:nth-child(1) {
+  width: 40%;
+}
+
+section:nth-child(2) {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section:nth-child(2) .content-container {
+  align-items: center;
+}
+
+section:nth-child(3) {
+    display: flex;
+    background-color: #FFF5F3;
+    color: black;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+section:nth-child(3) .content-container {
+  align-items: center;
+}
+
+
+.section-width {
+  max-width: 80%;
+}
+
+
+h3:hover:nth-child(1) {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: rgba(232,48,84, 1);
+  color: white;
+  border: solid;
+  border-color: rgba(232,48,84, 1);
+  font-size: 2rem;
+  padding: 0px 30px 0px 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+section:nth-child(5) {
+    display: flex;
+    background-color: rgba(232,48,84, 1);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+section:nth-child(5) img {
+  color: white;
+}
+
+.organiser {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.person {
+  padding: 40px;
+}
+
+
+
+img {
+  border-style: solid;
+  color: black;
+}
+
+
+
+
+
+
+/* Small Screens / Mobile */
+@media screen and (max-width: 898px) {
+.backgrnd-rubies {
+    background: gray url(img/rubiesv2.png) repeat 0 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    -webkit-animation: scroll 700s linear infinite;
+    z-index: -1;
+}
+
+.navbar {
+  position: static;
+}
+
+.navbar a {
+  width: 100%;
+  text-decoration: underline;
+}
+
+.section-wrap {
+    position: relative;
+    top: 200px;
+}
+.backgrnd-rubies img {
+  position: relative;
+}
+
+.person {
+  padding: 40px;
+  padding-top: 10px;
+}
+
+.navbar {
+  font-size: 1.5rem;
+  padding: 15px 0px 15px 0px;
+}
+.content:nth-child(1) {
+  width: 100%;
+}
+.content-container {
+    justify-content: center;
+}
+
+button {
+  align: center;
+}
+}
